@@ -5,7 +5,7 @@ using UnityEngine;
 public class move : MonoBehaviour
 {
     public float movimiento;
-     public float rotacion;
+    public float rotacion;
     public float speed = 10f;
     public float velocidadRotacion = 60f;
     private Rigidbody rb;
@@ -13,6 +13,7 @@ public class move : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
