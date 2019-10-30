@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class poisson : MonoBehaviour
 {
+    public float up;
+    public float side;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +18,8 @@ public class poisson : MonoBehaviour
      //       other.GetComponent<vida_aj>().TakeDamage(pois);
          //   other.GetComponent<ControlPlayer1>().dolor();
             Rigidbody rb = other.GetComponent<Rigidbody>();
-            rb.AddForce(transform.up*40f);
-            rb.AddForce(transform.forward*-20f);
+            rb.AddForce(transform.up*up);
+            rb.AddForce(transform.forward*-side);
         }
         
     }
