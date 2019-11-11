@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class MsgNpc : MonoBehaviour {
+public class MsgDoor : MonoBehaviour {
     public string msg = "";
 
     public string getMsg(){
