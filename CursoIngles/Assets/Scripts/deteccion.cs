@@ -18,14 +18,14 @@ public class deteccion : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "enemy"){
+        if(other.tag == "Player"){
          msgPanel.SetActive(true);
         }
     }
 
         void OnTriggerExit(Collider other)
     {
-        if(other.tag == "enemy"){
+        if(other.tag == "Player"){
          msgPanel.SetActive(false);
         }
     }
