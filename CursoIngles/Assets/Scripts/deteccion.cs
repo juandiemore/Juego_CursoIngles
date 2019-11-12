@@ -20,6 +20,9 @@ public class deteccion : MonoBehaviour
     {
         if(other.tag == "Player"){
          msgPanel.SetActive(true);
+         if(this.tag == "enemy"){
+            
+         }
         }
     }
 
