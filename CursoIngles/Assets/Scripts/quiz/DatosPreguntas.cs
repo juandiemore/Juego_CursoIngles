@@ -6,5 +6,5 @@ using UnityEngine;
 public class DatosPreguntas
 {
     public string questionText;
-    public Respuesta[] respuestas;
+    public Respuestas[] respuestas;
 }

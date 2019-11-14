@@ -68,10 +68,16 @@ Debug.Log("b");
 
     if(questionPool.Length > questionIndex +1)
 {
+    questionIndex++;
     ShowQuestion();
-}
+}else{
+    EndRound();
+    }
 }
  
+ public void EndRound(){
+     isRoundActive = false;
+ }
     void Update()
     {
         
