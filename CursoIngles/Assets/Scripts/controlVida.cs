@@ -15,15 +15,17 @@ public class controlVida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if(vida <)   
+        anim.SetInteger("vida",vida);
     }
 
         
-    void GetVida(){
-        
+    public int GetVida(){
+        return vida;
     }
 
-        
-    private void OnTriggerEnter(Collider other) {
+    public void SetVida(int _vida){
+        this.vida = _vida;
     }
+        
+
 }
