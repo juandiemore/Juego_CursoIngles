@@ -43,6 +43,8 @@ public class deteccionEnemy : MonoBehaviour
     {
         if(other.tag == "Player"){
          msgPanel.SetActive(false);
+          this.GetComponent<Collider>().enabled = false;
+          move.setSpeed(2f);
         }
     }
 }

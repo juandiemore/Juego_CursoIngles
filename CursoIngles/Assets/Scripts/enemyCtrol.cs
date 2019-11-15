@@ -6,6 +6,7 @@ public class enemyCtrol : MonoBehaviour
 {
 
     private Animator anim;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +22,11 @@ public class enemyCtrol : MonoBehaviour
     public void golpear()
     {
         anim.SetTrigger("punchi");
+    }
+
+      public void morir()
+    {
+        
+        anim.SetTrigger("die");
     }
 }
