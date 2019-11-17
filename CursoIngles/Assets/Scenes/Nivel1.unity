@@ -3000,7 +3000,7 @@ GameObject:
   - component: {fileID: 260916948}
   - component: {fileID: 260916947}
   m_Layer: 5
-  m_Name: w
+  m_Name: enemyQuiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3043,6 +3043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1910230762}
   my: {fileID: 666140787}
+  pjPanel: {fileID: 1440984762}
 --- !u!114 &260916948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4758,7 +4759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.03515435, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.021011, y: -3}
+  m_AnchoredPosition: {x: -9.020996, y: -3}
   m_SizeDelta: {x: 17.042, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443492024
@@ -17561,6 +17562,8 @@ GameObject:
   - component: {fileID: 1440984763}
   - component: {fileID: 1440984765}
   - component: {fileID: 1440984764}
+  - component: {fileID: 1440984766}
+  - component: {fileID: 1440984767}
   m_Layer: 5
   m_Name: pj
   m_TagString: Untagged
@@ -17627,6 +17630,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440984762}
   m_CullTransparentMesh: 0
+--- !u!95 &1440984766
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440984762}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30ebe4f726c472b4a8dd0b96407dfa7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1440984767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440984762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5dd2d278517ce4d81836167efbd5e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1443238456
 GameObject:
   m_ObjectHideFlags: 0
@@ -23020,7 +23054,7 @@ BoxCollider:
   m_GameObject: {fileID: 1910230762}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.363333, y: 0.7072426, z: 1.9323943}
   m_Center: {x: 0.02817485, y: 1.0358638, z: 0.46619445}

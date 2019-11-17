@@ -9,16 +9,21 @@ public class boton : MonoBehaviour
     [SerializeField] public GameObject my;
     private controlPlayer1 ctrl;
 
+    public GameObject pjPanel;
+
+    private controlVida vidaCtrl;
     private move move;
     private enemyCtrol eCtrl;
+    Rigidbody yo;
    // private Animator anim;
     void Start()
     {
         //anim = GetComponent<Animator>();
     eCtrl = enemy.GetComponent<enemyCtrol>();
     move = my.GetComponent<move>();
-     ctrl = my.GetComponent<controlPlayer1>(); 
-
+    ctrl = my.GetComponent<controlPlayer1>(); 
+    vidaCtrl = pjPanel.GetComponent<controlVida>();
+  
     }
 
     // Update is called once per frame
@@ -37,5 +42,7 @@ public class boton : MonoBehaviour
 
     public void incorrecto(){
        eCtrl.golpear();
+
+       vidaCtrl.SetVida(vidaCtrl.GetVida()-1);
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class controlVida : MonoBehaviour
 {   
     private Animator anim;
@@ -27,5 +27,8 @@ public class controlVida : MonoBehaviour
         this.vida = _vida;
     }
         
+    void die(){
+        SceneManager.LoadScene("death");
+    }
 
 }
